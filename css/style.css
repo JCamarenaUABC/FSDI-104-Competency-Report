@@ -1,0 +1,168 @@
+:root{
+    --Naranja:#FD8927;
+    --GrisBajo: #D5D3D3;
+    --GrisAlto: #6C6B6B;
+    --Blanco: #F5F5F5;
+}
+*{
+    margin: 0;
+    padding: 0; 
+ }
+body{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:2rem;
+    color: var(--GrisAlto);
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 10% 15% 75%;
+    grid-template-rows: minmax(auto, auto);   
+
+    border-bottom: 4px solid var(--Naranja);
+
+}
+
+header h1{
+    margin-top: 3rem;
+    margin-left: 2.5rem;
+    color: var(--GrisAlto);
+}
+
+footer{
+    border-top: 4px solid var(--Naranja);
+    margin-top: 2rem;
+}
+
+main{
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    margin-top: 1rem;
+    height: 50%;
+    text-align: center;
+}
+
+main h2{
+    text-align: left;
+
+}
+
+nav{
+    margin-top: 2rem;
+    text-align: right;
+}
+
+nav a{
+    display: inline-block !important;
+    width: 10rem !important;
+    font-size: 1.5rem !important;
+    padding-top: 1.3rem;
+    height: 3rem !important;
+    text-align: center !important;
+    border-top: 4px solid var(--GrisBajo) !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    color: var(--GrisAlto) !important;
+}
+
+nav a:hover{
+    border-top: 4px solid var(--Naranja) !important;
+    background-color: var(--GrisBajo) !important;
+    color:var(--Naranja) !important; 
+    height: 3rem !important;
+
+}
+
+
+.imageRotate{
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    height: 450px;
+    border-radius: 1%;
+}
+
+@media(max-width:700px){
+    
+    header{
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: minmax(auto, auto); 
+    }
+
+    header img{
+        margin-left: 10rem;
+    }
+    header h1{
+        margin-left: 11rem;
+    }
+   
+}
+
+
+.pet{
+    border: 1px solid black;
+    margin: 1rem; 
+    padding: 1rem;
+
+}
+
+#petSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+/*
+.btn-success{
+    background-color: #FD8927;
+    border:none;
+}
+
+.btn-success{
+    background-color: blue;
+}
+input{
+    display:block;
+    width: 80%;
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: 5px;
+    border: 1px solid #dedede;
+    margin: 1rem;
+
+}
+
+select{
+    display:block;
+    width: 80%;
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: 5px;
+    border: 1px solid #dedede;
+    margin: 1rem;
+
+}
+
+
+label{
+    font-size: 1.2rem;
+}
+
+button{
+background-color: black;
+font-size: 1.8rem;
+color: white;
+border-radius: 5px;
+border:none;
+padding: 1rem;
+
+}
+*/

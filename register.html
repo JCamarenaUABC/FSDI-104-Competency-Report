@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">    
+    <link rel="stylesheet" href="css/style.css" >
+
+    <script src="https://kit.fontawesome.com/6da635e2db.js" crossorigin="anonymous"></script>
+
+
+    <title>My Pets</title>
+</head>
+<body>
+    <header>
+        <img src="img/logox.png" width="150px" height="150px" >
+        <h1>My Pets
+        </h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="register.html">Register</a>
+        </nav>
+    <br>
+    </header>
+
+    <main class="container">
+        <h2>Register</h2>
+        <form action="#">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="type">Type</label>
+                <input type="text" id="type" class="form-control">
+            </div>
+
+
+            <div class="form-group">
+                <label for="breed">Breed</label>
+                <input type="text" id="breed" class="form-control">
+
+            </div>
+
+          
+
+            <div class="form-group">
+               
+                <label for="gender">Gender</label>
+                <select id="gender" class="form-control">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+        
+                <label for="services">Services</label>
+                <select id="services" class="form-control">
+                    <option value="" disabled selected>---- Select services ----</option>
+                    <option value="Shower">Shower</option>
+                    <option value="Hair cut">Hair cut</option>
+                    <option value="Gold services">Gold services</option>
+                    <option value="Full services">Full services</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+
+                <label for="owner">Owner</label>
+                <input type="text" id="owner" class="form-control">
+            </div>
+
+            <div class="form-group">
+
+                <label for="contactphone">Contact phone</label>
+                <input type="text" id="contactphone" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="colorpet">Color Pet</label>
+                <input type="color" id="colorpet" class="form-control">
+            </div>
+
+
+            <input type="button" value="Register" class="btn btn-success" onclick="register()">
+        </form>
+        <div id="totalSection">
+            
+        </div>
+
+
+        <div id="petSection"></div>
+
+    </main>
+    <footer>
+        <p>My Pets</p>
+        <p>Mexicali BC</p>
+    </footer>
+    <script src="js/Class.js"></script>
+    <script src="js/directory.js"></script>
+
+</body>
+</html>
